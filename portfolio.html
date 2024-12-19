@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Manan Tyagi's Portfolio</title>
+ <style>
+ 
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ 
+ body {
+ font-family: 'Arial', sans-serif;
+ background:#0a2782; 
+ color: rgb(250, 247, 247);
+ line-height: 1.6;
+ padding-top: 60px;
+ transition: background 0.5s ease-in-out;
+ }
+ nav {
+ background-color:skyblue; 
+ padding: 15px 0;
+ position: fixed;
+ width: 100%;
+ top: 0;
+ z-index: 1000;
+ }
+ nav ul {
+ list-style: none;
+ text-align: center;
+ }
+ nav ul li {
+ display: inline;
+ margin: 0 15px;
+ }
+ nav ul li a {
+ color: #faf4f4;
+ text-decoration: none;
+ font-size: 18px;
+ }
+ nav ul li a:hover,
+ nav ul li a.active {
+ color: #011014;
+ }
+ section {
+ padding: 40px 20px;
+ text-align: center;
+ margin-top: 80px;
+ }
+ h2 {
+ font-size: 30px;
+ margin-bottom: 20px;
+ font-family: 'Arial', sans-serif;
+ font-weight: bold;
+ color: rgb(236, 223, 232);
+ }
+ 
+ #home {
+ background-color:skyblue;
+ border-radius: 10px;
+ margin: 20px 0;
+ padding: 30px;
+ background-color:skyblue; 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ text-align: center;
+ position: relative;
+ transition: transform 0.5s ease;
+ }
+ #home:hover {
+ transform: scale(1.05); 
+ }
+ #home img {
+ border-radius: 50%;
+ width: 150px;
+ height: 150px;
+ margin-left: 20px;
+ opacity: 0;
+ animation: fadeIn 2s forwards;
+ }
+ #intro-card {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: left;
+ position: relative;
+ }
+ #intro-card h2 {
+ margin-right: 20px;
+ font-size: 35px;
+ }
+ @keyframes fadeIn {
+ 0% {
+ opacity: 0;
+ transform: translateY(-20px);
+ }
+ 100% {
+ opacity: 1;
+ transform: translateY(0);
+ }
+ }
+ 
+ #skills {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-top: 30px;
+ }
+ #skills ul {
+ list-style: none;
+ text-align: left;
+ padding: 0;
+ width: 45%;
+ }
+ #skills li {
+ font-size: 18px;
+ padding: 5px 0;
+ }
+ 
+ #skills img {
+ width: 40%;
+ border-radius: 10px;
+ box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+ }
+ 
+ #education {
+ text-align: center;
+ margin-top: 30px;
+ }
+ #education ul {
+ list-style: none;
+ padding: 0;
+ font-size: 18px;
+ text-align: left;
+ width: 60%;
+ margin: 0 auto;
+ }
+ #education li {
+ margin-bottom: 15px;
+ }
+ 
+ input, textarea {
+ width: 80%;
+ padding: 10px;
+ margin: 10px 0;
+ font-size: 16px;
+ transition: 0.3s ease;
+ }
+ input:focus, textarea:focus {
+ outline: none;
+ border: 2px solid #1abc9c;
+ }
+ button {
+ padding: 10px 20px;
+ background-color: #1abc9c;
+ color: white;
+ border: none;
+ cursor: pointer;
+ }
+ button:hover {
+ background-color: #16a085;
+ }
+ footer {
+ text-align: center;
+ padding: 20px;
+ background-color: #1a237e; 
+ color: white;
+ }
+ 
+ @media (max-width: 768px) {
+ #intro-card img {
+ width: 120px;
+ height: 120px;
+ }
+ section {
+ padding: 20px;
+ }
+ nav ul li {
+ display: block;
+ margin: 10px 0;
+ }
+ input, textarea {
+ width: 90%;
+ }
+ #skills {
+ flex-direction: column;
+ text-align: center;
+ }
+ #skills img {
+ width: 80%;
+ margin-top: 20px;
+ }
+ #education ul {
+ width: 90%;
+ }
+ }
+ </style>
+</head>
+<body>
+ 
+ <nav>
+ <ul>
+ <li><a href="#home" class="nav-link">Home</a></li>
+ <li><a href="#about" class="nav-link">About</a></li>
+ <li><a href="#skills" class="nav-link">Skills</a></li>
+ <li><a href="#education" class="nav-link">Education</a></li>
+ <li><a href="#projects" class="nav-link">Projects</a></li>
+ <li><a href="#contact" class="nav-link">Contact</a></li>
+ </ul>
+ </nav>
+ 
+ <section id="home">
+ <div id="intro-card">
+ <h2>Hi, I'm Manan Tyagi</h2>
+ <img src="C:\Users\Lenovo\AppData\Local\Microsoft\Windows\INetCache\IE\MZKRYAJB\KKF_3758[1].JPG" alt="Manan Tyagi"> 
+ </div>
+ </section>
+ 
+ <section id="about">
+ <h2>About Me</h2>
+ <p>Hello! I'm Manan Tyagi, a B.Tech student with a passion for technology and software 
+development. I am currently studying Computer Science Engineering at KIET Group of Institutions, 
+Ghaziabad, Uttar Pradesh. I love to do coding , playing cricket , watching shows , learn new 
+technologies, and solve real-world problems with software!</p>
+ </section>
+ 
+ <section id="skills">
+ <h2>Skills</h2>
+ <div>
+ <ul>
+ <li>JavaScript: Dynamic Web Interactions and Solving Moderate Problems</li> 
+ <li>C++: Object-Oriented Programming and Performing Basic Functions</li> 
+ <li>HTML: Basic to Advanced(using to create eye catching web pages)</li> 
+ <li>C: Problem Solving, Data Structures, Algorithm and Basic Problem Solving</li> 
+ <li>CSS: Responsive Layouts, Flexbox, Grid</li> 
+ </ul>
+ </div>
+ <div>
+ <img src="coding-person.jpg" alt="Person Coding"> 
+ </div>
+ </section>
+ 
+ <section id="education">
+ <h2>Education</h2>
+ <ul>
+ <li><strong>B.Tech in Computer Science Engineering</strong><br>KIET Group of Institutions, 
+Ghaziabad, Uttar Pradesh</li>
+ <li><strong>12th Grade</strong><br>St.Joseph's Academy , 2024</li>
+ <li><strong>10th Grade</strong><br>St.Joseph's Academy , 2022</li>
+ </ul>
+ </section>
+ 
+ <section id="projects">
+ <h2>Projects</h2>
+ <ul>
+ <li>Portfolio Website - A personal portfolio to showcase my work using CSS , HTML , Java 
+Script.</li>
+ <li>BudgetBuddy's website(A expense controlling simulator)</li>
+ </ul>
+ </section>
+ 
+ <section id="contact">
+ <h2>Contact</h2>
+ <p id="contact-info">
+ <strong>Email:</strong> <a 
+href="mailto:manantyagi690@gmail.com">manantyagi690@gmail.com</a><br>
+ <strong>Phone:</strong> 1234567890
+ </p>
+ <form id="contactForm" onsubmit="return validateForm()">
+ <input type="text" id="name" name="name" placeholder="Your Name" required>
+ <input type="email" id="email" name="email" placeholder="Your Email" required>
+ <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+ <button type="submit">Send Message</button>
+ </form>
+ <p id="formResponse" style="color: green; display: none;">Your message has been sent!</p>
+ </section>
+ 
+ 
+ <script>
+ 
+ function validateForm() {
+ var name = document.getElementById("name").value;
+ var email = document.getElementById("email").value;
+ var message = document.getElementById("message").value;
+ 
+ if (name == "" || email == "" || message == "") {
+ alert("Please fill out all fields.");
+ return false;
+ }
+ 
+ document.getElementById("formResponse").style.display = "block";
+ document.getElementById("contactForm").reset();
+ return false; 
+ }
+ </script>
+</body>
+</html>
